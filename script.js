@@ -4,9 +4,14 @@ const person = {
   name: "John Doe",
   age: 80,
 };
-let team = players;
-var team1= players;
-let cap1 = person;
+// Create a reference to players array
+const team = players;
+
+// Create a copy of players array
+const team1 = [...players];
+
+// Create a copy of person object
+const cap1 = {...person};
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
 
 window.players = players;
